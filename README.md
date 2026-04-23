@@ -27,9 +27,9 @@
 
 ---
 
-## 🎯 Lab Overview
+##  Lab Overview
 
-This lab demonstrates a **real SOC analyst workflow** — performing network attacks from Kali Linux against a Windows 10 Pro victim, then detecting and analyzing them in Wazuh SIEM. The core goal is to correlate each attack tool with its SIEM alert and MITRE ATT&CK technique — exactly how a Tier 1 SOC analyst works.
+This lab demonstrates a **Real SOC analyst workflow** — performing network attacks from Kali Linux against a Windows 10 Pro victim, then detecting and analyzing them in Wazuh SIEM. The core goal is to correlate each attack tool with its SIEM alert and MITRE ATT&CK technique — exactly how a Tier 1 SOC analyst works.
 
 ### Attacks Performed
 
@@ -198,7 +198,7 @@ nmap -sU --top-ports 20 192.168.XX.XX
 
 ---
 
-## 🟡 Phase 2 — Service Enumeration
+##  Phase 2 — Service Enumeration
 
 **Objective:** Gather detailed version and configuration info from open services.
 
@@ -299,7 +299,7 @@ nmap -p 445 --script=smb-vuln-* 192.168.XX.XX
 nmap -p 445 --script=smb-security-mode 192.168.XX.XX
 ```
 
-**EternalBlue Result:** `smb-vuln-ms17-010: false` — **NOT VULNERABLE** (patched system ✅)
+**EternalBlue Result:** `smb-vuln-ms17-010: false` — **NOT VULNERABLE** (patched system )
 
 ---
 
@@ -310,7 +310,7 @@ nmap -p 445 --script=smb-security-mode 192.168.XX.XX
 ```powershell
 # On Windows 10 victim
 Get-Service -Name WazuhSvc
-# Status: Running ✅
+# Status: Running 
 ```
 
 ### Live Log Monitoring (On Wazuh Server)
@@ -377,16 +377,16 @@ MITRE ATT&CK  → T1135              (Network Share Discovery)
 
 ```
 TA0043 Reconnaissance
-    ├── T1590 ✅  Gather Victim Network Information
-    └── T1592 ✅  Gather Victim Host Information
+    ├── T1590   Gather Victim Network Information
+    └── T1592   Gather Victim Host Information
 
 TA0007 Discovery
-    ├── T1046 ✅  Network Service Scanning
-    ├── T1082 ✅  System Information Discovery
-    └── T1135 ✅  Network Share Discovery
+    ├── T1046   Network Service Scanning
+    ├── T1082   System Information Discovery
+    └── T1135   Network Share Discovery
 
 TA0008 Lateral Movement (simulated)
-    └── T1021.002 ✅  SMB/Windows Admin Shares
+    └── T1021.002   SMB/Windows Admin Shares
 ```
 
 ---
