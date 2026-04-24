@@ -418,7 +418,6 @@ TA0008 Lateral Movement (simulated)
 ---
 ## 📁 Repository Structure
 
-\`\`\`
 soc-network-attacks-lab/
 │
 ├── README.md                             ← Lab overview, commands & MITRE mapping
@@ -452,8 +451,7 @@ soc-network-attacks-lab/
     ├── Screenshot 2026-04-23 140147...    ← SMB shares enumerated
     ├── Wazu-Server-Terminal_logs.png      ← Wazuh server terminal log evidence
     └── placeholder.md
-\`\`\`
-```
+
 
 ---
 
