@@ -31,6 +31,8 @@
 
 This lab demonstrates a **Real SOC analyst workflow** — performing network attacks from Kali Linux against a Windows 10 Pro victim, then detecting and analyzing them in Wazuh SIEM. The core goal is to correlate each attack tool with its SIEM alert and MITRE ATT&CK technique — exactly how a Tier 1 SOC analyst works.
 
+<img width="446" height="356" alt="image" src="https://github.com/user-attachments/assets/ba36fa30-0094-4af9-a164-7244393e98c4" />
+
 ### Attacks Performed
 
 | Phase | Attack Type | Tool Used | MITRE ID |
@@ -414,31 +416,43 @@ TA0008 Lateral Movement (simulated)
 | 🟢 Low | Conduct full CIS Benchmark remediation for Windows 10 Pro |
 
 ---
-
 ## 📁 Repository Structure
 
-```
+\`\`\`
 soc-network-attacks-lab/
 │
-├── README.md                          ← This file (lab overview + commands)
+├── README.md                             ← Lab overview, commands & MITRE mapping
 │
 ├── reports/
-│   └── incident-report.md             ← Professional SOC incident report
+│   ├── SOC-Network_Attacks.pdf           ← Full lab documentation (PDF)
+│   ├── SOC_Incident_Report_Network_Attacks.docx  ← Professional SOC incident report
+│   └── placeholder.md
 │
-├── docs/
-│   ├── lab-setup.md                   ← Victim VM setup guide
-│   ├── attack-commands.md             ← All attack commands reference
-│   └── wazuh-monitoring.md            ← Wazuh log analysis guide
-│
-├── scripts/
-│   ├── victim-setup.ps1               ← Windows 10 Pro setup (PowerShell)
-│   └── wazuh-log-check.sh             ← Wazuh log analysis bash script
-│
-├── evidence/
-│   └── wazuh-alert-summary.md         ← Alert counts and findings
-│
-└── screenshots/                       ← Add your lab screenshots here
-    └── README.md                      ← Screenshot naming guide
+└── screenshots/
+    ├── Network_Attacks_Phases             ← Attack phase diagram
+    ├── SIEM_logs.png                      ← Wazuh SIEM log evidence
+    ├── Screenshot 2026-04-22 160341...    ← Nmap scan results
+    ├── Screenshot 2026-04-22 160547...    ← Port scan output
+    ├── Screenshot 2026-04-22 160602...    ← Service enumeration
+    ├── Screenshot 2026-04-22 160706...    ← SMB enumeration
+    ├── Screenshot 2026-04-22 161134...    ← enum4linux output
+    ├── Screenshot 2026-04-22 161242...    ← Wazuh alerts dashboard
+    ├── Screenshot 2026-04-22 161251...    ← 764 hits — Rule 60107
+    ├── Screenshot 2026-04-23 125836...    ← Threat Hunting view
+    ├── Screenshot 2026-04-23 125901...    ← Rule 92031 discovery alerts
+    ├── Screenshot 2026-04-23 125932...    ← Rule 92217 SMB alerts
+    ├── Screenshot 2026-04-23 130227...    ← Rule 67027 process creation
+    ├── Screenshot 2026-04-23 130234...    ← MITRE ATT&CK T1046 mapped
+    ├── Screenshot 2026-04-23 130246...    ← MITRE ATT&CK T1135 mapped
+    ├── Screenshot 2026-04-23 130318...    ← Wazuh log terminal output
+    ├── Screenshot 2026-04-23 131336...    ← Alert count verification
+    ├── Screenshot 2026-04-23 135814...    ← Attacker IP log evidence
+    ├── Screenshot 2026-04-23 135837...    ← CIS Benchmark violations
+    ├── Screenshot 2026-04-23 140136...    ← enum4linux users dumped
+    ├── Screenshot 2026-04-23 140147...    ← SMB shares enumerated
+    ├── Wazu-Server-Terminal_logs.png      ← Wazuh server terminal log evidence
+    └── placeholder.md
+\`\`\`
 ```
 
 ---
