@@ -418,41 +418,42 @@ TA0008 Lateral Movement (simulated)
 ---
 ## 📁 Repository Structure
 
-\`\`\`
+```
 soc-network-attacks-lab/
 │
-├── README.md
+├── README.md                             ← Lab overview, commands & MITRE mapping
 │
 ├── reports/
-│   ├── SOC-Network_Attacks.pdf
-│   ├── SOC_Incident_Report_Network_Attacks.docx
+│   ├── SOC-Network_Attacks.pdf           ← Full lab documentation (PDF)
+│   ├── SOC_Incident_Report_Network_Attacks.docx  ← Professional SOC incident report
 │   └── placeholder.md
 │
 └── screenshots/
-    ├── Network_Attacks_Phases
-    ├── SIEM_logs.png
-    ├── Screenshot 2026-04-22 160341...
-    ├── Screenshot 2026-04-22 160547...
-    ├── Screenshot 2026-04-22 160602...
-    ├── Screenshot 2026-04-22 160706...
-    ├── Screenshot 2026-04-22 161134...
-    ├── Screenshot 2026-04-22 161242...
-    ├── Screenshot 2026-04-22 161251...
-    ├── Screenshot 2026-04-23 125836...
-    ├── Screenshot 2026-04-23 125901...
-    ├── Screenshot 2026-04-23 125932...
-    ├── Screenshot 2026-04-23 130227...
-    ├── Screenshot 2026-04-23 130234...
-    ├── Screenshot 2026-04-23 130246...
-    ├── Screenshot 2026-04-23 130318...
-    ├── Screenshot 2026-04-23 131336...
-    ├── Screenshot 2026-04-23 135814...
-    ├── Screenshot 2026-04-23 135837...
-    ├── Screenshot 2026-04-23 140136...
-    ├── Screenshot 2026-04-23 140147...
-    ├── Wazu-Server-Terminal_logs.png
+    ├── Network_Attacks_Phases             ← Attack phase diagram
+    ├── SIEM_logs.png                      ← Wazuh SIEM log evidence
+    ├── Screenshot 2026-04-22 160341...    ← Nmap scan results
+    ├── Screenshot 2026-04-22 160547...    ← Port scan output
+    ├── Screenshot 2026-04-22 160602...    ← Service enumeration
+    ├── Screenshot 2026-04-22 160706...    ← SMB enumeration
+    ├── Screenshot 2026-04-22 161134...    ← enum4linux output
+    ├── Screenshot 2026-04-22 161242...    ← Wazuh alerts dashboard
+    ├── Screenshot 2026-04-22 161251...    ← 764 hits — Rule 60107
+    ├── Screenshot 2026-04-23 125836...    ← Threat Hunting view
+    ├── Screenshot 2026-04-23 125901...    ← Rule 92031 discovery alerts
+    ├── Screenshot 2026-04-23 125932...    ← Rule 92217 SMB alerts
+    ├── Screenshot 2026-04-23 130227...    ← Rule 67027 process creation
+    ├── Screenshot 2026-04-23 130234...    ← MITRE ATT&CK T1046 mapped
+    ├── Screenshot 2026-04-23 130246...    ← MITRE ATT&CK T1135 mapped
+    ├── Screenshot 2026-04-23 130318...    ← Wazuh log terminal output
+    ├── Screenshot 2026-04-23 131336...    ← Alert count verification
+    ├── Screenshot 2026-04-23 135814...    ← Attacker IP log evidence
+    ├── Screenshot 2026-04-23 135837...    ← CIS Benchmark violations
+    ├── Screenshot 2026-04-23 140136...    ← enum4linux users dumped
+    ├── Screenshot 2026-04-23 140147...    ← SMB shares enumerated
+    ├── Wazu-Server-Terminal_logs.png      ← Wazuh server terminal log evidence
     └── placeholder.md
-\`\`\`
+```
+
 ---
 
 ## 🔗 References
